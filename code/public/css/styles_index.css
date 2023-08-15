@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    padding: 3px;
+}
+
+button {
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: transparent;
+}
+
+.logo{
+    font-size: 1.5em;
+    color: black;
+    user-select: none;
+}
+
+.navigation a{
+    position: relative;
+    font-size: 1.1em;
+    color: black;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 60px;
+    margin-right: 0px ;
+}
+
+.navigation a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: black;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navigation a:hover::after {
+    transform: scaleX(1);
+} 
+
+.login-form .btnLogin-popup{
+    width: 100px;
+    height: 45px;
+    background:transparent;
+    border: 2px solid black;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: black;
+    font-weight: 500;
+    margin-left: 40px;
+    /* margin-top: 35rem; */
+    transition: .5s;
+}
+
+.login-form .btnLogin-popup:hover{
+    background: black;
+    color: #162938;
+}
+
+/* Style the form itself */
+.login-form {
+    display: flex; /* Display the form and buttons in a row */
+    align-items: center; /* Align vertically in the center */
+    margin-left: 0px;
+    margin-top:0px; /* Adjust the margin as needed */
+}
+
+.login-form .btnLogin-popup {
+    margin-left: 20px; /* Add space between the buttons */
+}
+body {
+     background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover; 
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; */
+    /* background-image: url('https://www.canva.com/design/DAFrmE4qJpU/Inz5YfaEj9CwtgDVVnRXew/edit?utm_content=DAFrmE4qJpU&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton'); */
+    background-size: cover;
+    background-position: center;
+    background-color: black; /* For browsers that do not support gradients */
+  background-image: linear-gradient(to bottom right, white, gray);
+  }
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    margin-top: 120px;
+  }
+  
+  /* Hide the images by default */
+  .mySlides {
+    display:flex;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  .imgg{
+    width: 190px;
+    height: 575px;
+    box-shadow: 7.5px 7.5px 5px gray;
+  }
+
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 3px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    /* margin-top: 200px; */
+  }
+
+  
+  /* Adjust the positioning of the dot indicators */
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }

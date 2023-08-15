@@ -1,0 +1,45 @@
+body {
+  background-color: #E8ECEF;
+}
+
+p {
+  margin: 1.5rem 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+img {
+  width: 300px;
+  height: 300px;
+  margin: 20px 5px;
+}
+
+.display-3 {
+  font-weight: 600;
+}
+
+.centered {
+    padding-top: 200px;
+    text-align: center;
+}
+
+.header-div {
+  background-color: #080202;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-page-header {
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.login, .register {
+  margin-left: 17.5rem;
+}
+

@@ -1,0 +1,104 @@
+<%- include('partials/index_header') %>
+
+
+<header>
+    <h2 class="logo">Personalised Recommendation System</h2>
+    <nav class="navigation">
+        <a href="index.html">Home</a>
+        <a href="poems.html">Featured</a>
+        <a href="about.html">About</a>
+        <a href="mailto:yaminisisodia18@gmail.com">Contact</a>
+        
+        <!-- <button class="btnLogin-popup">Login</button> -->
+    </nav>
+    <button><a class="btn btn-light btn-lg" href="/register" role="button">Signup</a></button>
+    <button><a class="btn btn-dark btn-lg" href="/login" role="button">Login</a></button>
+</header>
+    <!-- <div class="loginb">
+        <a href="poems.html"><button class="btnLogin-popup">Poems</button></a> 
+    </div> -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+      
+        <div class="mySlides fade">
+          <img class="imgg" src="https://i.ytimg.com/vi/ETsekJKsr3M/maxresdefault.jpg" style="width:100%">
+        </div>
+
+        
+
+        <div class="mySlides fade">
+          <img class="imgg" src="https://www.91-cdn.com/hub/wp-content/uploads/2022/12/Apple-Products-expected-to-launch-in-2023.png" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+          <img class="imgg" src="https://img.freepik.com/premium-photo/elevated-view-cosmetic-products-brushes-black-background_23-2147899396.jpg" style="width:100%">
+        </div>
+      
+      
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br>
+      
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+     <br><br><br><br>
+      <script>
+        var slideIndex = 1;
+showSlides(slideIndex);
+carousel();
+
+function plusSlides(n) {
+showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+var i;
+var slides = document.getElementsByClassName("mySlides");
+var dots = document.getElementsByClassName("dot");
+if (n > slides.length) {
+slideIndex = 1;
+}
+if (n < 1) {
+slideIndex = slides.length;
+}
+for (i = 0; i < slides.length; i++) {
+slides[i].style.display = "none";
+}
+for (i = 0; i < dots.length; i++) {
+dots[i].className = dots[i].className.replace(" active", "");
+}
+slides[slideIndex - 1].style.display = "block";
+dots[slideIndex - 1].className += " active";
+}
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > x.length) {slideIndex = 1}
+  x[slideIndex-1].style.display = "block";
+  setTimeout(carousel, 5000); // Change image every 2 seconds
+}
+
+      </script>
+
+
+
+
+
+<%- include('partials/footer') %>
